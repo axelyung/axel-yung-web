@@ -16,6 +16,10 @@ module.exports = {
   },
   module: {
     rules: [
+      { 
+        test: /\.json$/, 
+        loader: 'json-loader' 
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -60,8 +64,11 @@ module.exports = {
     extractSass
   ],
   resolve: {
+    extensions: ['.js', '.vue', '.json'],
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      'data': 'data',
     }
   },
   devServer: {

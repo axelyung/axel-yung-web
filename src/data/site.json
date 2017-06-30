@@ -1,0 +1,24 @@
+{
+    "nav": [
+        {
+            "name": "projects",
+            "url": "nectima.se"
+        },
+        {
+            "name": "expertise",
+            "url": "google.com"
+        },
+        {
+            "name": "resources",
+            "url": "google.com"
+        },
+        {
+            "name": "about",
+            "url": "google.com"
+        },
+        {
+            "name": "contact",
+            "url": "google.com"
+        }
+    ]
+}
