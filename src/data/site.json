@@ -20,5 +20,133 @@
             "name": "contact",
             "url": "google.com"
         }
-    ]
+    ],
+    "footer": {
+        "title": "axel yung",
+        "email": "axelyung@gmail.com",
+        "teleNr": "+46 76 754 39 44",
+        "media": [
+            {
+                "icon": "",
+                "alt": "LinkdIn",
+                "url": "https://www.linkedin.com/in/axel-yung-6621302b/"
+            },
+            {
+                "icon": "",
+                "alt": "Github",
+                "url": "https://github.com/axelyung"
+            }
+        ]
+    },
+    "pages": {
+        "home": {
+            "blurb": "Enim tempor consectetur ipsum consectetur sit. Ipsum mollit culpa ad nostrud aute veniam pariatur commodo occaecat officia laboris. Non nostrud nostrud occaecat nulla irure nulla occaecat enim commodo magna amet aute. Minim aliqua exercitation nulla adipisicing cillum sit duis tempor excepteur. Officia cillum cupidatat cupidatat anim aute et aliqua exercitation elit consequat. Consequat occaecat tempor fugiat qui ad laborum. Adipisicing occaecat minim et enim quis ut reprehenderit consequat enim ex laboris."
+        },
+        "projects": {
+            "title": "projects",
+            "blurb": "Sint voluptate amet dolore pariatur non ex excepteur esse ad proident velit nisi. Dolor eu voluptate exercitation id.",
+            "case": [
+                {
+                    "name": "nectima",
+                    "logo": "",
+                    "img": "",
+                    "url": "",
+                    "blurb": "Labore aliquip magna aliquip do fugiat anim. Laborum eu in anim sit magna proident exercitation. Voluptate eiusmod eiusmod veniam ullamco et sint et laborum sint esse magna deserunt consequat. Aliqua mollit proident laborum ullamco Lorem aute excepteur sunt est. Commodo irure Lorem quis exercitation do exercitation est exercitation do veniam exercitation. Sunt proident officia dolore fugiat aliqua reprehenderit reprehenderit aliquip ipsum id pariatur. Minim minim irure nisi aute pariatur ex aliqua consequat sint."
+                },
+                {
+                    "name": "",
+                    "logo": "",
+                    "img": "",
+                    "url": "",
+                    "blurb": "Eiusmod ex est occaecat ullamco laborum Lorem occaecat eiusmod voluptate minim sit sit excepteur id. Exercitation aliquip quis amet incididunt consectetur Lorem enim mollit. Quis nisi esse ea commodo labore irure. Velit incididunt ex sunt excepteur velit. Aute adipisicing et ea reprehenderit duis minim."
+                },
+                {
+                    "name": "",
+                    "logo": "",
+                    "img": "",
+                    "url": "",
+                    "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
+                }
+            ]
+        },
+        "expertise": {
+            "title": "expertise",
+            "blurb": "Cillum nisi incididunt fugiat tempor quis do ex anim nisi irure ex consectetur. Minim proident sit id ea nisi enim. Eiusmod eu est sit adipisicing et consequat dolor qui id. Deserunt fugiat elit ut ad consequat ullamco adipisicing eiusmod et. Qui veniam eiusmod Lorem laborum elit magna dolor fugiat amet. Laborum elit in fugiat officia.",
+            "fields": [
+                {
+                    "name": "DB/ORM",
+                    "icon": "",
+                    "items": [
+                        "MySQL",
+                        "PostGreSQL",
+                        "Entity Framework",
+                        "Eloquent"
+                    ]
+                },
+                {
+                    "name": "API Frameworks",
+                    "icon": "",
+                    "items": [
+                        "ASP.NET",
+                        "PHP Laravel",
+                        "PHP Silex",
+                        "Node.JS"
+                    ]
+                },
+                {
+                    "name": "JS Applications",
+                    "icon": "",
+                    "items": [
+                        "Angular 2/4",
+                        "React",
+                        "Vue",
+                        "jQuery"
+                    ]
+                },
+                {
+                    "name": "Design",
+                    "icon": "",
+                    "items": [
+                        "CSS3",
+                        "Bootstrap",
+                        "Semantic UI",
+                        "Bourbon",
+                        "SASS"
+                    ]
+                },
+                {
+                    "name": "Dev Tools",
+                    "icon": "",
+                    "items": [
+                        "Gulp",
+                        "Bower",
+                        "Webpack",
+                        "Nuget",
+                        "NPM",
+                        "Yarn"
+                    ]
+                },
+                {
+                    "name": "",
+                    "icon": "",
+                    "items": []
+                }
+            ]
+        },
+        "resources": {},
+        "about": {
+            "title": "About",
+            "blurb": "Nostrud consectetur ea sint exercitation laboris enim do minim culpa elit incididunt. Qui deserunt laboris enim et ad est. Magna anim aliquip ea velit commodo cupidatat mollit nulla laboris non Lorem nisi ut occaecat. Dolore amet sit elit mollit deserunt nulla sunt. Ea amet minim qui tempor sint sunt enim ad elit ullamco qui."
+        },
+        "contact": {
+            "title": "Contact",
+            "blurb": "Pariatur ipsum culpa eu incididunt laboris non minim qui. Anim qui eu eiusmod consectetur laborum reprehenderit nisi aute aliqua anim amet officia eiusmod. Reprehenderit aute ex enim do occaecat excepteur commodo excepteur. Excepteur ex aute proident in commodo dolor exercitation dolor. Mollit cupidatat commodo exercitation nostrud.",
+            "labels": {
+                "email": "Your email",
+                "subject": "Subject",
+                "message": "Message",
+                "submit": "send"
+            }
+        }
+    }
 }
