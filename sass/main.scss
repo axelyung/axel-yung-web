@@ -1,10 +1,21 @@
+/* --------------------------------------
+------------- AXEL-YUNG-WEB -------------
+---------------------------------------*/
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+//-------------- VENDORS ----------------
+@import '~bootstrap/scss/bootstrap';
 
-body{
-    background: lightgray;
-}
+//------------- FOUNDATION --------------
+@import './foundation/base';
+@import './foundation/nav';
+@import './foundation/footer';
+@import './foundation/form';
 
-h1{
-    color: pink;
-}
+//--------------- PAGES -----------------
+@import './pages/home';
+@import './pages/projects';
+@import './pages/expertise';
+@import './pages/resources';
+@import './pages/about';
+@import './pages/contact'
+
