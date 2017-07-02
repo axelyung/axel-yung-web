@@ -27,12 +27,12 @@
         "teleNr": "+46 76 754 39 44",
         "media": [
             {
-                "icon": "",
+                "icon": "linkdin",
                 "alt": "LinkdIn",
                 "url": "https://www.linkedin.com/in/axel-yung-6621302b/"
             },
             {
-                "icon": "",
+                "icon": "github",
                 "alt": "Github",
                 "url": "https://github.com/axelyung"
             }
@@ -75,7 +75,7 @@
             "fields": [
                 {
                     "name": "DB/ORM",
-                    "icon": "",
+                    "icon": "database",
                     "items": [
                         "MySQL",
                         "PostGreSQL",
@@ -85,7 +85,7 @@
                 },
                 {
                     "name": "API Frameworks",
-                    "icon": "",
+                    "icon": "server",
                     "items": [
                         "ASP.NET",
                         "PHP Laravel",
@@ -94,8 +94,17 @@
                     ]
                 },
                 {
-                    "name": "JS Applications",
-                    "icon": "",
+                    "name": "CMS",
+                    "icon": "cms",
+                    "items": [
+                        "Wordpress",
+                        "EpiServer",
+                        "Ghost"
+                    ]
+                },
+                {
+                    "name": "JS Frameworks",
+                    "icon": "javascript",
                     "items": [
                         "Angular 2/4",
                         "React",
@@ -105,7 +114,7 @@
                 },
                 {
                     "name": "Design",
-                    "icon": "",
+                    "icon": "design",
                     "items": [
                         "CSS3",
                         "Bootstrap",
@@ -116,7 +125,7 @@
                 },
                 {
                     "name": "Dev Tools",
-                    "icon": "",
+                    "icon": "tools",
                     "items": [
                         "Gulp",
                         "Bower",
@@ -125,11 +134,6 @@
                         "NPM",
                         "Yarn"
                     ]
-                },
-                {
-                    "name": "",
-                    "icon": "",
-                    "items": []
                 }
             ]
         },
