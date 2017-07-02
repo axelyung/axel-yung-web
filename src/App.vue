@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-       
-    <navbar></navbar>
+    <div class="container">
+      <navbar></navbar>
+      <router-view></router-view>
+    </div>
+    <foot></foot>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar'
+import Navbar from 'components/Navbar'
+import Foot from 'components/Foot'
+import VueRouter from 'vue-router'
 
 export default {
+  name: 'app',
   components: {
-    Navbar
-  },
-  name: 'app'
+    Navbar,
+    Foot
+  }
 }
-
 </script>
 
