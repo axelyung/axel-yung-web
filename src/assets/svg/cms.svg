@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-cms</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon-cms" fill-rule="nonzero" fill="#000000">
+        <g id="icon-cms" fill-rule="nonzero" fill="currentcolor">
             <g id="007-layers-1">
                 <path d="M41.1790909,19.9509091 L49.9572727,14.9354545 L24.9790909,0.75 L0,14.9354545 L8.77818182,19.9509091 L0,24.9354545 L8.77818182,29.9509091 L0,34.9354545 L24.9790909,49.2063636 L49.9572727,34.9354545 L41.1790909,29.9509091 L49.9572727,24.9354545 L41.1790909,19.9509091 Z M24.9790909,2.84090909 L46.2836364,14.94 L24.9790909,27.1127273 L3.67363636,14.94 L24.9790909,2.84090909 Z M10.6136364,20.9990909 L24.9790909,29.2063636 L39.3445455,20.9990909 L46.2836364,24.94 L24.9790909,37.1127273 L3.67363636,24.94 L10.6136364,20.9990909 Z M46.2836364,34.94 L24.9790909,47.1127273 L3.67363636,34.94 L10.6136364,30.9990909 L24.9790909,39.2063636 L39.3445455,30.9990909 L46.2836364,34.94 Z" id="Shape"></path>
             </g>

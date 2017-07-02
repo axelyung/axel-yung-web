@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
-    <title>icon-server</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon-server" fill-rule="nonzero" fill="#000000">
+        <g id="icon-server" fill-rule="nonzero" fill="currentcolor">
             <g id="011-server">
                 <path d="M8.75,5.41666667 C6.6825,5.41666667 5,7.09916667 5,9.16666667 C5,11.2341667 6.6825,12.9166667 8.75,12.9166667 C10.8175,12.9166667 12.5,11.2341667 12.5,9.16666667 C12.5,7.09916667 10.8175,5.41666667 8.75,5.41666667 Z M8.75,11.25 C7.60166667,11.25 6.66666667,10.3158333 6.66666667,9.16666667 C6.66666667,8.0175 7.60166667,7.08333333 8.75,7.08333333 C9.89833333,7.08333333 10.8333333,8.0175 10.8333333,9.16666667 C10.8333333,10.3158333 9.89833333,11.25 8.75,11.25 Z" id="Shape"></path>
                 <circle id="Oval" cx="41.6666667" cy="7.91666667" r="1"></circle>
