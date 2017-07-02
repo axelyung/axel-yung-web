@@ -1,0 +1,156 @@
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin bs-gutter($gutter) {
+    .row {
+        @include margin-lr(-$gutter);
+        .col-xxs,
+        .col-xxs-1,
+        .col-xxs-2,
+        .col-xxs-3,
+        .col-xxs-4,
+        .col-xxs-5,
+        .col-xxs-6,
+        .col-xxs-7,
+        .col-xxs-8,
+        .col-xxs-9,
+        .col-xxs-10,
+        .col-xxs-11,
+        .col-xxs-12,
+        .col-xs,
+        .col-xs-1,
+        .col-xs-2,
+        .col-xs-3,
+        .col-xs-4,
+        .col-xs-5,
+        .col-xs-6,
+        .col-xs-7,
+        .col-xs-8,
+        .col-xs-9,
+        .col-xs-10,
+        .col-xs-11,
+        .col-xs-12,
+        .col-sm,
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-md,
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-lg,
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12,
+        .col-xl,
+        .col-xl-1,
+        .col-xl-2,
+        .col-xl-3,
+        .col-xl-4,
+        .col-xl-5,
+        .col-xl-6,
+        .col-xl-7,
+        .col-xl-8,
+        .col-xl-9,
+        .col-xl-10,
+        .col-xl-11,
+        .col-xl-12,
+        .col-xxl,
+        .col-xxl-1,
+        .col-xxl-2,
+        .col-xxl-3,
+        .col-xxl-4,
+        .col-xxl-5,
+        .col-xxl-6,
+        .col-xxl-7,
+        .col-xxl-8,
+        .col-xxl-9,
+        .col-xxl-10,
+        .col-xxl-11,
+        .col-xxl-12 {
+            @include padding-lr($gutter);
+        }
+    }
+}
+
+@mixin hw($value) {
+    height: $value;
+    width: $value;
+}
+
+@mixin truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin abs-h-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin abs-v-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin padding-lr($padding) {
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+@mixin padding-tb($padding) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+@mixin margin-lr($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+@mixin margin-tb($margin) {
+    margin-top: $margin;
+    margin-bottom: $margin;
+}

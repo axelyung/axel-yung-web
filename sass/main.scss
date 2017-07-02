@@ -5,6 +5,10 @@
 //-------------- VENDORS ----------------
 @import '~bootstrap/scss/bootstrap';
 
+//-------------- HELPERS ----------------
+@import './foundation/mixins.scss';
+@import './foundation/utilities.scss';
+
 //------------- FOUNDATION --------------
 @import './foundation/base';
 @import './foundation/nav';
