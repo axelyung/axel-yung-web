@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import site from 'data/site'
+import data from 'site'
 
 export default {
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',
-      navItems: site.nav
+      navItems: data.nav
     }
   }
 }

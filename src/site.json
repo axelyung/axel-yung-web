@@ -2,23 +2,23 @@
     "nav": [
         {
             "name": "projects",
-            "url": "nectima.se"
+            "url": "/projects"
         },
         {
             "name": "expertise",
-            "url": "google.com"
+            "url": "/expertise"
         },
         {
             "name": "resources",
-            "url": "google.com"
+            "url": "/resources"
         },
         {
             "name": "about",
-            "url": "google.com"
+            "url": "/about"
         },
         {
             "name": "contact",
-            "url": "google.com"
+            "url": "/contact"
         }
     ],
     "footer": {
