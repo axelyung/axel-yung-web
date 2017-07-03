@@ -1,20 +1,18 @@
 <template>
   <div class="body">
     <div class="row">
-      <div class="offset-md-3 col-md-6">
+      <div class="page-header offset-md-3 col-md-6">
         <h1>{{ data.title }}</h1>
         <p>{{ data.blurb }}</p>
       </div>
     </div>
     <div class="row">
-      <div v-for="(field, i) in data.fields" :key="i" class="col-md-4">
+      <div v-for="(field, i) in data.fields" :key="i" class="field col-md-4 col-lg-2">
         <svg-icon :icon="field.icon"></svg-icon>
-        <div>{{ field.name }}</div>
-        <ul>
-          <li v-for="item in field.items" :key="item">
-            {{ item }}
-          </li>
-        </ul>
+        <div class="name">{{ field.name }}</div>
+        <a v-for="item in field.items" :key="item">
+          {{ item }}
+        </a>
       </div>
     </div>
   </div>
