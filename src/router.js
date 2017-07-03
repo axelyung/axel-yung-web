@@ -6,6 +6,8 @@ import Expertise from 'pages/Expertise'
 import Resources from 'pages/Resources'
 import About from 'pages/About'
 import Contact from 'pages/Contact'
+import Thanks from 'pages/Thanks'
+import ErrorPage from 'pages/ErrorPage'
 
 Vue.use(Router)
 
@@ -34,6 +36,14 @@ export default new Router({
         {
             path: '/contact',
             component: Contact
+        },
+        {
+            path: '/thanks',
+            component: Thanks
+        },
+        {
+            path: '*',
+            component: ErrorPage
         }
     ]
 })
