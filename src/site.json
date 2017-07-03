@@ -1,24 +1,19 @@
 {
     "nav": [
         {
-            "name": "projects",
-            "url": "/projects"
+            "name": "projects"
         },
         {
-            "name": "expertise",
-            "url": "/expertise"
+            "name": "expertise"
         },
         {
-            "name": "resources",
-            "url": "/resources"
+            "name": "resources"
         },
         {
-            "name": "about",
-            "url": "/about"
+            "name": "about"
         },
         {
-            "name": "contact",
-            "url": "/contact"
+            "name": "contact"
         }
     ],
     "footer": {
@@ -40,30 +35,31 @@
     },
     "pages": {
         "home": {
-            "blurb": "Enim tempor consectetur ipsum consectetur sit. Ipsum mollit culpa ad nostrud aute veniam pariatur commodo occaecat officia laboris. Non nostrud nostrud occaecat nulla irure nulla occaecat enim commodo magna amet aute. Minim aliqua exercitation nulla adipisicing cillum sit duis tempor excepteur. Officia cillum cupidatat cupidatat anim aute et aliqua exercitation elit consequat. Consequat occaecat tempor fugiat qui ad laborum. Adipisicing occaecat minim et enim quis ut reprehenderit consequat enim ex laboris."
+            "blurb": "Enim tempor consectetur ipsum consectetur sit. Ipsum mollit culpa ad nostrud aute veniam pariatur commodo occaecat officia laboris. Non nostrud nostrud occaecat nulla irure nulla occaecat enim commodo magna amet aute. Minim aliqua exercitation nulla adipisicing cillum sit duis tempor excepteur. Officia cillum cupidatat cupidatat anim aute et aliqua exercitation elit consequat. Consequat occaecat tempor fugiat qui ad laborum. Adipisicing occaecat minim et enim quis ut reprehenderit consequat enim ex laboris.",
+            "bgImg" : "sketch_1.jpeg"
         },
         "projects": {
             "title": "projects",
-            "blurb": "Sint voluptate amet dolore pariatur non ex excepteur esse ad proident velit nisi. Dolor eu voluptate exercitation id.",
+            "blurb": "Consequat irure quis velit esse occaecat cupidatat nostrud duis. Sunt elit aliqua ut commodo exercitation labore deserunt velit. Sint voluptate amet dolore pariatur non ex excepteur esse ad proident velit nisi. Dolor eu voluptate exercitation id.",
             "case": [
                 {
                     "name": "nectima",
-                    "logo": "",
-                    "img": "",
+                    "logo": "nectima_logo.png",
+                    "img": "nectima_screen.png",
                     "url": "",
                     "blurb": "Labore aliquip magna aliquip do fugiat anim. Laborum eu in anim sit magna proident exercitation. Voluptate eiusmod eiusmod veniam ullamco et sint et laborum sint esse magna deserunt consequat. Aliqua mollit proident laborum ullamco Lorem aute excepteur sunt est. Commodo irure Lorem quis exercitation do exercitation est exercitation do veniam exercitation. Sunt proident officia dolore fugiat aliqua reprehenderit reprehenderit aliquip ipsum id pariatur. Minim minim irure nisi aute pariatur ex aliqua consequat sint."
                 },
                 {
-                    "name": "",
-                    "logo": "",
-                    "img": "",
+                    "name": "yaytrade",
+                    "logo": "yaytrade_logo.jpg",
+                    "img": "yaytrade_screen.png",
                     "url": "",
                     "blurb": "Eiusmod ex est occaecat ullamco laborum Lorem occaecat eiusmod voluptate minim sit sit excepteur id. Exercitation aliquip quis amet incididunt consectetur Lorem enim mollit. Quis nisi esse ea commodo labore irure. Velit incididunt ex sunt excepteur velit. Aute adipisicing et ea reprehenderit duis minim."
                 },
                 {
-                    "name": "",
-                    "logo": "",
-                    "img": "",
+                    "name": "Inkbay",
+                    "logo": "inkbay_logo.png",
+                    "img": "inkbay_screen.png",
                     "url": "",
                     "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
                 }
