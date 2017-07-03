@@ -1,16 +1,44 @@
-.footer {
+footer.footer {
+    height: $footer-height;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 2rem;
     background: $black;
-    color: white;
+    color: $white;
     text-align: center;
-    .media {
-        a svg {
-            color: white;
-            
+    display: flex;
+    .inner {
+        margin: auto;
+        .title {
+            font-size: 18px;
+            margin-bottom: .5rem;
+        }
+        .email,
+        .tele-nr {
+            font-size: 14px;
+        }
+        .title,
+        .email{
+            color: $white;
+            &:hover{
+                color: $white;
+            }
+            @include scale-hover(5);
+        }
+        .media-links {
+            margin-top: .75rem;
+            a {
+                @include scale-hover(10);
+                svg {
+                    color: $white;
+                    @include hw(2rem);
+                }
+                +a {
+                    margin-left: 1rem;
+                }
+
+            }
         }
     }
 }
