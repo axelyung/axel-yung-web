@@ -1,0 +1,24 @@
+
+$brand-primary : #1ABC9C;
+$black : #000;
+$grey : #A2A9AF;
+$white : #FFF;
+
+$border-radius: 2px;
+$box-shadow : 0 0 5px 0 rgba(0,0,0,0.25);
+
+$footer-height: 180px;
+
+$fast-transition: .2s;
+$slow-transition: .5s;
+
+@font-face{
+    font-family: Roboto;
+    src: url('~/../../src/assets/fonts/Roboto-Medium.ttf');
+    font-weight: medium;
+}
+
+@font-face{
+    font-family: Roboto;
+    src: url('~/../../src/assets/fonts/Roboto-Regular.ttf');
+}
