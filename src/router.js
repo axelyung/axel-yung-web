@@ -15,34 +15,42 @@ export default new Router({
     routes: [
         {
             path: '',
+            name: 'home',
             component: Home
         },
         {
             path: '/projects',
+            name: 'projects',
             component: Projects
         },
         {
             path: '/expertise',
+            name: 'expertise',
             component: Expertise
         },
         {
             path: '/resources',
+            name: 'resources',
             component: Resources
         },
         {
             path: '/about',
+            name: 'about',
             component: About
         },
         {
             path: '/contact',
+            name: 'contact',
             component: Contact
         },
         {
             path: '/thanks',
+            name: 'thanks',
             component: Thanks
         },
         {
             path: '*',
+            name: 'error-page',            
             component: ErrorPage
         }
     ]
