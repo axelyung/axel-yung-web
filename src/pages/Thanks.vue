@@ -4,6 +4,7 @@
       <div class="offset-md-3 col-md-6">
         <h1>{{ data.title }}</h1>
         <h5>{{ data.subtitle }}</h5>
+        <router-link class="btn btn-primary" to="/">{{ data.btnText }}</router-link>
       </div>
     </div>
   </div>
