@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item" v-for="(item, i) in navItems" :key="i">
-          <router-link class="nav-link" :to="item.name">{{ item.name }}</router-link>
+          <router-link class="nav-link uppercase" :to="item.name">{{ item.name }}</router-link>
         </li>
       </ul>
     </div>
