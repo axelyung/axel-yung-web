@@ -197,7 +197,11 @@
         },
         "thanks": {
             "title": "Thanks",
-            "subtitle" : "I'll try and get back to you asap! :)"
+            "subtitle" : "I'll try and get back to you asap!"
+        },
+        "error" : {
+            "title" : "404 :(",
+            "subtitle" : "That page doesn't exist (anymore). Please use the nav links in the menu above."
         }
     }
 }

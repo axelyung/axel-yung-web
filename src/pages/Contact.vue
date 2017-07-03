@@ -7,7 +7,7 @@
       </div>
       <div class="offset-md-3 col-md-6">
         <form :action="'https://formspree.io/' + data.email" method="POST">
-          <!--<input type="hidden" name="_next" value="nectima.se">-->
+          <input type="hidden" name="_next" value="/#/thanks">
           <input type="text" name="_gotcha" class="display-none">
           <div class="form-group">
             <label for="address">{{ data.labels.email }}</label>
@@ -24,9 +24,6 @@
           <input type="submit" class="btn btn-primary" :value="data.labels.submit">
         </form>
       </div>
-      <!-- Do not change the code! -->
-  
-      </script>
     </div>
   </div>
 </template>
