@@ -187,12 +187,17 @@
         "contact": {
             "title": "Contact",
             "blurb": "Pariatur ipsum culpa eu incididunt laboris non minim qui. Anim qui eu eiusmod consectetur laborum reprehenderit nisi aute aliqua anim amet officia eiusmod. Reprehenderit aute ex enim do occaecat excepteur commodo excepteur. Excepteur ex aute proident in commodo dolor exercitation dolor. Mollit cupidatat commodo exercitation nostrud.",
+            "email": "axelyung@gmail.com",
             "labels": {
                 "email": "Your email",
                 "subject": "Subject",
                 "message": "Message",
                 "submit": "send"
             }
+        },
+        "thanks": {
+            "title": "Thanks",
+            "subtitle" : "I'll try and get back to you asap! :)"
         }
     }
 }
