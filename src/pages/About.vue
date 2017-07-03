@@ -2,9 +2,9 @@
   <div class="body">
     <div class="row">
       <div class="offset-lg-1 col-lg-4">
-        <img :src="imgPath(data.img)"></img>
+        <img class="profile-img" :src="imgPath(data.img)"></img>
       </div>
-      <div class="col-lg-7">
+      <div class="col-lg-6">
         <h1>{{ data.title }}</h1>
         <div v-html="data.bio"></div>
       </div>
