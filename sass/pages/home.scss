@@ -1,0 +1,16 @@
+#app.home {
+    .body>.bg-img{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: $footer-height;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .25;
+    }
+    .blurb {
+        font-size: 1.25rem
+    }
+}
