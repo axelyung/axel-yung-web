@@ -1,5 +1,27 @@
+html body {
+    min-height: 100vh;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: normal;
+    padding-bottom: $footer-height;
+    a {
+        color: $black;
+        transition: color $fast-transition;
+        &:hover {
+            text-decoration: none;
+            color: $brand-primary;
+        }
+    }
+    .body-container>.body {
+        padding: 3rem 0 4rem;
+        .page-header{
+            text-align: center;
+            margin-bottom: 1.5rem;
+            h1{
+                text-transform: uppercase;
+            }
+        }
+    }
 
-
-
-
-
+}
