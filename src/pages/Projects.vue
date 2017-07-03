@@ -1,17 +1,20 @@
 <template>
   <div class="body row">
-    <div class="offset-md-3 col-md-6">
+    <div class="page-header offset-md-3 col-md-6">
       <h1>{{ data.title }}</h1>
       <p>{{ data.blurb }}</p>
     </div>
-    <div class="cases">
-      <div class="case" v-for="(c, i) in data.case" :key="i">
+    <div class="cases offset-lg-1 col-lg-10">
+      <div class="case" v-for="(c, i) in data.case" :key="i"
+        :style="{ borderColor: c.color}">
         <div class="row">
           <div class="col-md-6">
-            <img :src="imgPath(c.img)">
+            <div class="inner">
+              <img class="screen" :src="imgPath(c.img)">
+            </div>
           </div>
           <div class="col-md-6">
-            <img :src="imgPath(c.logo)" :alt="c.name">
+            <img class="logo" :src="imgPath(c.logo)" :alt="c.name">
             <p class="blurb">{{ c.blurb }}</p>
           </div>
         </div>
