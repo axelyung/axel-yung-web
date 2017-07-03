@@ -1,13 +1,38 @@
 <template>
-  <div></div>
+  <div class="body">
+    <div class="row">
+      <div class="offset-md-3 col-md-6">
+        <h1>{{ data.title }}</h1>
+        <p>{{ data.blurb }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div v-for="(field, i) in data.fields" :key="i" class="col-md-4">
+        <svg-icon :icon="field.icon"></svg-icon>
+        <div>{{ field.name }}</div>
+        <ul>
+          <li v-for="item in field.items" :key="item">
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {
+import site from 'site'
+import '../components/icons'
 
+export default {
+  data() {
+    return {
+      data: site.pages.expertise
+    }
+  }
 }
 </script>
 
 <style>
-  
+
 </style>
