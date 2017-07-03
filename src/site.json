@@ -36,7 +36,7 @@
     "pages": {
         "home": {
             "blurb": "Enim tempor consectetur ipsum consectetur sit. Ipsum mollit culpa ad nostrud aute veniam pariatur commodo occaecat officia laboris. Non nostrud nostrud occaecat nulla irure nulla occaecat enim commodo magna amet aute. Minim aliqua exercitation nulla adipisicing cillum sit duis tempor excepteur. Officia cillum cupidatat cupidatat anim aute et aliqua exercitation elit consequat. Consequat occaecat tempor fugiat qui ad laborum. Adipisicing occaecat minim et enim quis ut reprehenderit consequat enim ex laboris.",
-            "bgImg" : "sketch_1.jpeg"
+            "bgImg": "sketch_1.jpeg"
         },
         "projects": {
             "title": "projects",
@@ -133,10 +133,56 @@
                 }
             ]
         },
-        "resources": {},
+        "resources": {
+            "title": "Resources",
+            "blurb": "Consectetur culpa minim ipsum consequat aute eu magna dolor reprehenderit. Id ad cillum exercitation quis velit. Nisi proident voluptate excepteur non laboris. Magna duis anim est velit esse duis elit dolore anim. Nulla voluptate quis proident esse nulla est excepteur amet irure esse. Incididunt minim irure esse aute quis cillum consequat culpa eu.",
+            "subjects": [
+                {
+                    "name": "Books",
+                    "links": [
+                        {
+                            "text": "text",
+                            "url": "nectima.se"
+                        },
+                        {
+                            "text": "text2",
+                            "url": "inkbay.tattoo"
+                        }
+                    ]
+                },
+                {
+                    "name": "Libraries",
+                    "links": [
+                        {
+                            "text": "text",
+                            "url": "nectima.se"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tutorials",
+                    "links": [
+                        {
+                            "text": "text",
+                            "url": "nectima.se"
+                        }
+                    ]
+                },
+                {
+                    "name": "Inspiration",
+                    "links": [
+                        {
+                            "text": "text",
+                            "url": "nectima.se"
+                        }
+                    ]
+                }
+            ]
+        },
         "about": {
             "title": "About",
-            "blurb": "Nostrud consectetur ea sint exercitation laboris enim do minim culpa elit incididunt. Qui deserunt laboris enim et ad est. Magna anim aliquip ea velit commodo cupidatat mollit nulla laboris non Lorem nisi ut occaecat. Dolore amet sit elit mollit deserunt nulla sunt. Ea amet minim qui tempor sint sunt enim ad elit ullamco qui."
+            "img" : "profile.jpg",
+            "bio": "Nostrud consectetur <strong>ea</strong> sint exercitation laboris enim do minim culpa elit incididunt. Qui deserunt laboris enim et ad est. Magna anim aliquip ea velit commodo cupidatat mollit nulla laboris non Lorem nisi ut occaecat. Dolore amet sit elit mollit deserunt nulla sunt. Ea amet minim qui tempor sint sunt enim ad elit ullamco qui."
         },
         "contact": {
             "title": "Contact",
