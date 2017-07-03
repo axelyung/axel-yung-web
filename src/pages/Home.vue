@@ -1,5 +1,6 @@
 <template>
   <div class="body row">
+  <div class="bg-img" :style="{ backgroundImage: 'url(' + imgPath(data.bgImg) + ')' }"></div>
     <div class="col-md-6">
       {{ data.blurb }}
     </div>
