@@ -16,9 +16,9 @@ module.exports = {
   },
   module: {
     rules: [
-      { 
-        test: /\.json$/, 
-        loader: 'json-loader' 
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       },
       {
         test: /\.vue$/,
@@ -45,6 +45,11 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        exclude: /node_modules/,
+        loader: 'file-loader'
       },
       {
         test: /\.scss$/,
