@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="inner">
-      <a class="title block" href="/">{{ data.title }}</a>
+      <router-link class="title block" to="/">{{ data.title }}</router-link>
       <a class="email block" :href="'mailto:' + data.email">{{ data.email }}</a>
       <div class="tele-nr">{{ data.teleNr }}</div>
       <div class="media-links align-center">

@@ -1,15 +1,16 @@
-#app.expertise{
-    .field{
+#app.expertise {
+    .field {
         text-align: center;
-        svg{
+        margin-bottom: 2rem;
+        svg {
             @include hw(60px);
             margin-bottom: 1rem;
         }
-        .name{
+        .name {
             font-weight: bold;
             margin-bottom: .5rem;
         }
-        a{
+        a {
             display: block;
             list-style: none;
             padding: 0;

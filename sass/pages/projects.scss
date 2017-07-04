@@ -3,6 +3,7 @@
         border: 1px solid transparent;
         border-radius: $border-radius;
         box-shadow: $box-shadow;
+        background: $white;
         +.case {
             margin-top: 2rem;
         }
@@ -22,10 +23,20 @@
                     height: 3rem;
                     margin-bottom: 1rem;
                 }
-                .blurb{
+                .blurb {
                     margin-bottom: 0;
                 }
             }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .case {
+            text-align: center;
+        }
+    }
+    @include media-breakpoint-only(xs) {
+        .body-container>.body {
+            @include padding-lr(0);
         }
     }
 }

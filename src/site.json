@@ -1,21 +1,24 @@
 {
-    "nav": [
-        {
-            "name": "projects"
-        },
-        {
-            "name": "expertise"
-        },
-        {
-            "name": "resources"
-        },
-        {
-            "name": "about"
-        },
-        {
-            "name": "contact"
-        }
-    ],
+    "nav": {
+        "title": "axel yung",
+        "navItems": [
+            {
+                "name": "projects"
+            },
+            {
+                "name": "expertise"
+            },
+            {
+                "name": "resources"
+            },
+            {
+                "name": "about"
+            },
+            {
+                "name": "contact"
+            }
+        ]
+    },
     "footer": {
         "title": "axel yung",
         "email": "axelyung@gmail.com",
@@ -35,11 +38,13 @@
     },
     "pages": {
         "home": {
+            "title": "Welcome",
             "blurb": "Enim tempor consectetur ipsum consectetur sit. Ipsum mollit culpa ad nostrud aute veniam pariatur commodo occaecat officia laboris. Non nostrud nostrud occaecat nulla irure nulla occaecat enim commodo magna amet aute. Minim aliqua exercitation nulla adipisicing cillum sit duis tempor excepteur. Officia cillum cupidatat cupidatat anim aute et aliqua exercitation elit consequat. Consequat occaecat tempor fugiat qui ad laborum. Adipisicing occaecat minim et enim quis ut reprehenderit consequat enim ex laboris.",
-            "bgImg": "sketch_1.jpeg"
+            "backgroundImage": "sketch_1.jpeg"
         },
         "projects": {
             "title": "projects",
+            "backgroundImage": "sketch_2.jpg",
             "blurb": "Consequat irure quis velit esse occaecat cupidatat nostrud duis. Sunt elit aliqua ut commodo exercitation labore deserunt velit. Sint voluptate amet dolore pariatur non ex excepteur esse ad proident velit nisi. Dolor eu voluptate exercitation id.",
             "case": [
                 {
@@ -66,7 +71,7 @@
                     "url": "https://inkbay.tattoo/",
                     "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
                 },
-                                {
+                {
                     "name": "Körkortsjakten",
                     "logo": "kkj_logo.png",
                     "img": "kkj_screen.png",
@@ -74,7 +79,7 @@
                     "url": "https://www.korkortsjakten.se/",
                     "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
                 },
-                                {
+                {
                     "name": "Xtractor",
                     "logo": "xtractor_logo.png",
                     "img": "xtractor_screen.png",
@@ -86,6 +91,7 @@
         },
         "expertise": {
             "title": "expertise",
+            "backgroundImage": "sketch_3.jpg",
             "blurb": "Cillum nisi incididunt fugiat tempor quis do ex anim nisi irure ex consectetur. Minim proident sit id ea nisi enim. Eiusmod eu est sit adipisicing et consequat dolor qui id. Deserunt fugiat elit ut ad consequat ullamco adipisicing eiusmod et. Qui veniam eiusmod Lorem laborum elit magna dolor fugiat amet. Laborum elit in fugiat officia.",
             "fields": [
                 {
@@ -154,6 +160,7 @@
         },
         "resources": {
             "title": "Resources",
+            "backgroundImage": "sketch_1.jpeg",
             "blurb": "Consectetur culpa minim ipsum consequat aute eu magna dolor reprehenderit. Id ad cillum exercitation quis velit. Nisi proident voluptate excepteur non laboris. Magna duis anim est velit esse duis elit dolore anim. Nulla voluptate quis proident esse nulla est excepteur amet irure esse. Incididunt minim irure esse aute quis cillum consequat culpa eu.",
             "subjects": [
                 {
@@ -200,11 +207,13 @@
         },
         "about": {
             "title": "About",
-            "img" : "profile.jpg",
+            "img": "profile.jpg",
+            "backgroundImage": "sketch_2.jpg",
             "bio": "Nostrud consectetur <strong>ea</strong> sint exercitation laboris enim do minim culpa elit incididunt. Qui deserunt laboris enim et ad est. Magna anim aliquip ea velit commodo cupidatat mollit nulla laboris non Lorem nisi ut occaecat. Dolore amet sit elit mollit deserunt nulla sunt. Ea amet minim qui tempor sint sunt enim ad elit ullamco qui."
         },
         "contact": {
             "title": "Contact",
+            "backgroundImage": "sketch_3.jpg",
             "blurb": "Pariatur ipsum culpa eu incididunt laboris non minim qui. Anim qui eu eiusmod consectetur laborum reprehenderit nisi aute aliqua anim amet officia eiusmod. Reprehenderit aute ex enim do occaecat excepteur commodo excepteur. Excepteur ex aute proident in commodo dolor exercitation dolor. Mollit cupidatat commodo exercitation nostrud.",
             "email": "axelyung@gmail.com",
             "labels": {
@@ -216,13 +225,15 @@
         },
         "thanks": {
             "title": "Thanks",
-            "subtitle" : "I'll try and get back to you asap!",
-            "btnText" : "Back to homepage"
+            "backgroundImage": "sketch_1.jpeg",
+            "subtitle": "I'll try and get back to you asap!",
+            "btnText": "Back to homepage"
         },
-        "error" : {
-            "title" : "404 :(",
-            "subtitle" : "That page doesn't exist (anymore). Please use the nav links in the menu above.",
-            "btnText" : "Back to homepage"
+        "error": {
+            "title": "404 :(",
+            "backgroundImage": "sketch_3.jpg",
+            "subtitle": "That page doesn't exist (anymore). Please use the nav links in the menu above.",
+            "btnText": "Back to homepage"
         }
     }
 }

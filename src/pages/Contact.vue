@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="row">
-      <div class="page-header offset-md-3 col-md-6">
+      <div class="page-header offset-md-2 col-md-8 offset-lg-3 col-lg-6">
         <h1>{{ data.title }}</h1>
         <p>{{ data.blurb }}</p>
       </div>
@@ -24,7 +24,6 @@
             <textarea v-validate="'required'" name="message" class="form-control" id="message" placeholder="Enter message"></textarea>
           </div>
           <button ref="submitBtn" type="button" @click="submit" class="btn btn-primary">
-            <div ref="submitLoader" :class="{ 'loader' : true, 'active' : submitting }"></div>
             <span>{{ data.labels.submit }}</span>
           </button>
         </form>
@@ -57,7 +56,6 @@ export default {
     return {
       data: site.pages.contact,
       submitFailed: false,
-      submitting : false,
     }
   },
   methods: {
@@ -65,7 +63,6 @@ export default {
       this.$validator.validateAll().then((val) => {
         this.$refs.submitBtn.blur();
         if (val) {
-          this.submitting = true;
           this.$refs.emailForm.submit();
         } else {
           this.submitFailed = true;

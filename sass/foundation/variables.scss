@@ -24,5 +24,11 @@ $slow-transition: .5s;
 
 @font-face{
     font-family: Roboto;
+    src: url('~/../../src/assets/fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: Roboto;
     src: url('~/../../src/assets/fonts/Roboto-Regular.ttf');
 }

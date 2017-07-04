@@ -1,15 +1,14 @@
 nav.navbar {
-    border-bottom: 2px solid $black;
     padding: 0;
-    box-shadow: $box-shadow-bottom;
     &:after {
+        box-shadow: $box-shadow-bottom;
         display: block;
         content: '';
         position: absolute;
-        left: 0;
+        left: -100vw;
+        right: -100vw;
         top: 0;
         height: 100%;
-        width: 100%;
         background: $white;
         z-index: -1;
         opacity: .95;
@@ -90,6 +89,7 @@ nav.navbar {
             padding: 4px 0 0;
             position: relative;
             color: $black;
+            text-transform: uppercase;
             &:after {
                 display: block;
                 content: '';
@@ -101,7 +101,7 @@ nav.navbar {
                 opacity: 0;
                 transition: opacity $fast-transition;
             }
-            &.router-link-active {
+            &.active {
                 color: $brand-primary;
                 &:after {
                     opacity: 1;
@@ -124,10 +124,13 @@ nav.navbar {
         }
     }
     @include media-breakpoint-down(sm) {
+        .navbar-brand{
+            line-height: 3.25rem;
+        }
         .navbar-nav {
             align-items: center;
             font-size: 1.5rem;
-            font-weight: bold;
+            font-weight: medium;
             padding-bottom: .5rem;
             .nav-item,
             .nav-item+.nav-item {

@@ -1,8 +1,9 @@
 <template>
   <div class="body row">
-  <div class="bg-img" :style="{ backgroundImage: 'url(' + imgPath(data.bgImg) + ')' }"></div>
-    <div class="blurb col-md-6">
-      {{ data.blurb }}
+  <div class="bg-img"></div>
+    <div class="content col-md-8 col-lg-6">
+      <h1>{{ data.title }}</h1>
+      <p class="blurb">{{ data.blurb }}</p>
     </div>
   </div>
 </template>

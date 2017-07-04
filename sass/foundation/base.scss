@@ -8,12 +8,26 @@ html body {
     a {
         color: $black;
         transition: color $fast-transition;
+        &:focus,
         &:hover {
             text-decoration: none;
             color: $brand-primary;
+            outline: none;
         }
     }
     >#app {
+        overflow: hidden;
+        >.background {
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: .1;
+        }
         .body-container>.body {
             padding: 3rem 0 4rem;
             .page-header {
@@ -22,6 +36,11 @@ html body {
                 h1 {
                     text-transform: uppercase;
                 }
+            }
+        }
+        @include media-breakpoint-down(xs) {
+            .body-container>.body {
+                padding: 2rem 1rem;
             }
         }
     }

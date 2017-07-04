@@ -1,11 +1,11 @@
 <template>
   <div class="body">
     <div class="row">
-      <div class="offset-lg-1 col-lg-4">
+      <div class="col-md-6 offset-lg-1 col-lg-4">
         <img class="profile-img" :src="imgPath(data.img)"></img>
       </div>
-      <div class="col-lg-6">
-        <h1>{{ data.title }}</h1>
+      <div class="col-md-6">
+        <h1 class="title">{{ data.title }}</h1>
         <div v-html="data.bio"></div>
       </div>
     </div>

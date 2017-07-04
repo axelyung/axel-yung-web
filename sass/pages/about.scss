@@ -2,4 +2,9 @@
     .profile-img{
         width: 100%;
     }
+    @include media-breakpoint-down(sm){
+        .title{
+            margin-top: 1rem;
+        }
+    }
 }
