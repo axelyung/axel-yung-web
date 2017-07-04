@@ -65,6 +65,22 @@
                     "color": "#000",
                     "url": "https://inkbay.tattoo/",
                     "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
+                },
+                                {
+                    "name": "Körkortsjakten",
+                    "logo": "kkj_logo.png",
+                    "img": "kkj_screen.png",
+                    "color": "#4f7fc1",
+                    "url": "https://www.korkortsjakten.se/",
+                    "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
+                },
+                                {
+                    "name": "Xtractor",
+                    "logo": "xtractor_logo.png",
+                    "img": "xtractor_screen.png",
+                    "color": "#b8d1c4",
+                    "url": "https://xtractor.se/",
+                    "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
                 }
             ]
         },

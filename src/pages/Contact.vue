@@ -1,27 +1,32 @@
 <template>
   <div class="body">
     <div class="row">
-      <div class="offset-md-3 col-md-6">
+      <div class="page-header offset-md-3 col-md-6">
         <h1>{{ data.title }}</h1>
         <p>{{ data.blurb }}</p>
       </div>
       <div class="offset-md-3 col-md-6">
-        <form :action="'https://formspree.io/' + data.email" method="POST">
+        <form ref="emailForm" :action="'https://formspree.io/' + data.email" method="POST">
           <input type="hidden" name="_next" value="/#/thanks">
           <input type="text" name="_gotcha" class="display-none">
           <div class="form-group">
+            <label class="error-msg" v-if="errors.has('_replyto') && submitFailed">{{ errors.first('_replyto') }}</label>
             <label for="address">{{ data.labels.email }}</label>
-            <input name="_replyto" type="email" class="form-control" id="address" aria-describedby="email" placeholder="Enter email">
+            <input v-validate="'required|email'" name="_replyto" type="text" class="form-control" id="address" aria-describedby="email" placeholder="Enter email">
           </div>
           <div class="form-group">
             <label for="subject">{{ data.labels.subject }}</label>
             <input name="_subject" type="text" class="form-control" id="subject" placeholder="Enter subject">
           </div>
           <div class="form-group">
+            <label class="error-msg" v-if="errors.has('message') && submitFailed">{{ errors.first('message') }}</label>
             <label for="message">{{ data.labels.message }}</label>
-            <textarea name="message" class="form-control" id="message" placeholder="Enter message"></textarea>
+            <textarea v-validate="'required'" name="message" class="form-control" id="message" placeholder="Enter message"></textarea>
           </div>
-          <input type="submit" class="btn btn-primary" :value="data.labels.submit">
+          <button ref="submitBtn" type="button" @click="submit" class="btn btn-primary">
+            <div ref="submitLoader" :class="{ 'loader' : true, 'active' : submitting }"></div>
+            <span>{{ data.labels.submit }}</span>
+          </button>
         </form>
       </div>
     </div>
@@ -30,11 +35,42 @@
 
 <script>
 import site from 'site'
+import { Validator } from 'vee-validate';
+const dictionary = {
+  en: {
+    custom: {
+      _replyto: {
+        required: 'Who should I respond to?',
+        email: 'This doesn\'t look like a valid email'
+      },
+      message: {
+        required: 'What\'s your message?'
+      }
+    }
+  }
+};
+
+Validator.updateDictionary(dictionary);
 
 export default {
   data() {
     return {
-      data: site.pages.contact
+      data: site.pages.contact,
+      submitFailed: false,
+      submitting : false,
+    }
+  },
+  methods: {
+    submit() {
+      this.$validator.validateAll().then((val) => {
+        this.$refs.submitBtn.blur();
+        if (val) {
+          this.submitting = true;
+          this.$refs.emailForm.submit();
+        } else {
+          this.submitFailed = true;
+        }
+      });
     }
   }
 }

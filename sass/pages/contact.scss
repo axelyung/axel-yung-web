@@ -1,0 +1,87 @@
+#app.contact {
+    .page-header {
+        margin-bottom: .5rem;
+    }
+    form {
+        text-align: center;
+        .form-group {
+            text-align: left;
+            label {
+                font-size: .75rem;
+                text-transform: uppercase;
+                &.error-msg {
+                    color: $error-clr;
+                    +label {
+                        display: none;
+                    }
+                    ~input,
+                    ~textarea{
+                        border-color: $error-clr;
+                    }
+                }
+            }
+            input,
+            textarea {
+                &::-webkit-input-placeholder {
+                    font-family: 'Roboto';
+                    color: $grey;
+                }
+                &:focus {
+                    border-color: $brand-primary;
+                    box-shadow: $box-shadow;
+                }
+            }
+            textarea {
+                resize: vertical;
+                height: 8rem;
+            }
+        }
+        .btn {
+            font-family: 'Roboto';
+            margin-top: .5rem;
+            text-transform: uppercase;
+            min-width: 150px;
+            border: none;
+            transition: transform $slow-transition;
+            position: relative;
+            span {
+                position: relative;
+                &:after {
+                    display: block;
+                    visibility: hidden;
+                    content: '';
+                    position: absolute;
+                    border-bottom: 2px solid $white;
+                    bottom: -1px;
+                    left: 50%;
+                    right: 50%;
+                    transition: all $slow-transition;
+                }
+            }
+            .loader{
+                @include abs-center;
+                visibility: hidden;
+                &.active{
+                    visibility: visible;
+                    +span{
+                        visibility: hidden;
+                    }
+                }
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                box-shadow: $box-shadow;
+                background: $brand-primary;
+                outline: none;
+                transform: scale(1.05);
+                span:after {
+                    visibility: visible;
+                    left: 0;
+                    right: 0;
+                }
+            }
+            
+        }
+    }
+}
