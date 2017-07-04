@@ -1,8 +1,6 @@
 nav.navbar {
     border-bottom: 2px solid $black;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: visible;
     box-shadow: $box-shadow-bottom;
     &:after {
         display: block;
@@ -28,7 +26,6 @@ nav.navbar {
         width: $width;
         height: $height;
         cursor: pointer;
-        z-index: 900;
         top: 28px;
         margin-top: -10px;
         padding: 0;
@@ -46,10 +43,12 @@ nav.navbar {
             display: block;
             &:before,
             &:after {
+                display: block;
+                position: absolute;
+                content: '';
                 width: $width;
                 height: $thickness;
                 background-color: $black;
-                display: block;
                 transition-property: margin, transform;
                 transition-duration: .2s;
                 transition-delay: .2s, 0;
@@ -60,16 +59,10 @@ nav.navbar {
             &:after {
                 margin-top: -($height/2 - $thickness);
             }
-            &:before,
-            &:after {
-                position: absolute;
-                content: '';
-            }
         }
         &[aria-expanded="true"] {
             .navbar-toggler-icon {
                 background-color: rgba(255, 255, 255, 0);
-                transition-delay: .2s;
                 &:before {
                     margin-top: 0;
                     transform: rotate(45deg);
@@ -86,6 +79,7 @@ nav.navbar {
     .navbar-brand {
         font-size: 2rem;
         color: $black;
+        margin-right: auto;
     }
     .navbar-nav {
         align-items: flex-end;
@@ -143,19 +137,6 @@ nav.navbar {
                 padding: 0;
                 &:after {
                     display: none;
-                }
-            }
-        }
-        #nav-links {
-            display: block!important;
-            max-height: 0;
-            .navbar-nav {
-                visibility: hidden;
-            }
-            &.show {
-                max-height: 100vh;
-                .navbar-nav {
-                    visibility: visible;
                 }
             }
         }
