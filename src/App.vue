@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="page">
     <div class="container body-container">
-      <navbar></navbar>
+      <navbar ref="nav"></navbar>
       <router-view></router-view>
     </div>
     <foot></foot>
@@ -22,10 +22,11 @@ export default {
     }
   },
   watch: {
-  '$route.name' () {
-    this.page = this.$route.name
-  }
-},
+    '$route.name'() {
+      this.page = this.$route.name;
+      this.$refs.nav.closeMenu();
+    }
+  },
   components: {
     Navbar,
     Foot

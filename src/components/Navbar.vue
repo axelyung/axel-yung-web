@@ -1,17 +1,15 @@
 <template>
-  <nav class="navbar navbar-toggleable-sm">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <b-navbar toggleable type="light" toggle-breakpoint="sm" sticky>
+    <b-nav-toggle ref="toggler" class="hidden-md-up" target="nav_collapse"></b-nav-toggle>
     <router-link class="navbar-brand" to="/">axel yung</router-link>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item" v-for="(item, i) in navItems" :key="i">
-          <router-link class="nav-link uppercase" :to="item.name">{{ item.name }}</router-link>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <b-collapse is-nav id="nav_collapse">
+      <b-nav is-nav-bar class="navbar-nav ml-auto">
+        <b-nav-item class="nav-link uppercase" v-for="(item, i) in navItems" :key="i" :to="item.name">
+          {{ item.name }}
+        </b-nav-item>
+      </b-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
@@ -20,8 +18,15 @@ import data from 'site'
 export default {
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
       navItems: data.nav
+    }
+  },
+  methods: {
+    closeMenu() {
+      let toggler = this.$refs.toggler.$el; 
+      if(toggler.attributes['aria-expanded'].nodeValue === 'true'){
+        this.$refs.toggler.$el.click();
+      }
     }
   }
 }
