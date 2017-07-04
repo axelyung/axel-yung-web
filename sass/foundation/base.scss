@@ -13,15 +13,17 @@ html body {
             color: $brand-primary;
         }
     }
-    .body-container>.body {
-        padding: 3rem 0 4rem;
-        .page-header{
-            text-align: center;
-            margin-bottom: 1.5rem;
-            h1{
-                text-transform: uppercase;
+    >#app {
+        background: $white;
+        .body-container>.body {
+            padding: 3rem 0 4rem;
+            .page-header {
+                text-align: center;
+                margin-bottom: 1.5rem;
+                h1 {
+                    text-transform: uppercase;
+                }
             }
         }
     }
-
 }

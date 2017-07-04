@@ -4,6 +4,7 @@
 @import './foundation/variables';
 //-------------- VENDORS ----------------
 @import '~bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css';
 
 //-------------- HELPERS ----------------
 @import './foundation/mixins.scss';
@@ -11,10 +12,12 @@
 
 //------------- FOUNDATION --------------
 @import './foundation/base';
-@import './foundation/nav';
-@import './foundation/footer';
-@import './foundation/form';
-@import './foundation/loader';
+
+//------------- COMPONENTS --------------
+@import './components/nav';
+@import './components/footer';
+@import './components/form';
+@import './components/loader';
 
 //--------------- PAGES -----------------
 @import './pages/home';
