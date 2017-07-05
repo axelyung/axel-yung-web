@@ -1,7 +1,3 @@
-.body-container{
-  transition: height $router-transition;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition-property: opacity, visibility, display;
@@ -10,6 +6,12 @@
 
 .fade-enter-active {
   transition-delay: $router-transition/2;
+}
+
+.fade-leave-active{
+  position: absolute;
+  left: 15px;
+  right: 15px;
 }
 
 .fade-enter,
