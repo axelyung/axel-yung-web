@@ -6,10 +6,11 @@
         <p>{{ data.blurb }}</p>
       </div>
     </div>
-    <div class="row">
-      <div v-for="(subject, i) in data.subjects" :key="i" class="subject col-md-3">
+    <div class="row subjects">
+      <div v-for="(subject, i) in data.subjects" :key="i" class="subject col-sm-6 col-md-3">
+        <svg-icon :icon="subject.icon"></svg-icon>
         <div class="name">{{ subject.name }}</div>
-        <a v-for="link in subject.links" :key="link.text" :href="link.url">
+        <a v-for="link in subject.links" :key="link.text" :href="link.url" target="_blank">
           {{ link.text }}
         </a>
       </div>
