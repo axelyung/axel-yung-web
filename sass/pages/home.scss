@@ -1,8 +1,8 @@
-#app.home {
+#app .home {
     nav.navbar {
         border-bottom: 2px solid $black;
         &:after {
-            display: none;
+            opacity: 0;
         }
         .nav-link:after{
             bottom: -16px;

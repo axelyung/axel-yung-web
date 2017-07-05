@@ -1,3 +1,6 @@
+import favicon from './assets/favicon/favicon.ico'
+import stylesheet from '../sass/main.scss'
+
 import Vue from 'vue'
 import App from 'App'
 import SvgIcon from 'vue-svgicon'

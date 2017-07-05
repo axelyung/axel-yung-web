@@ -1,5 +1,5 @@
 <template>
-  <div class="body row">
+  <div class="body row home">
   <div class="bg-img"></div>
     <div class="content col-md-8 col-lg-6">
       <h1>{{ data.title }}</h1>

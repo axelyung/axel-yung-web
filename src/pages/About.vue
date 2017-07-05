@@ -1,5 +1,5 @@
 <template>
-  <div class="body">
+  <div class="body about">
     <div class="row">
       <div class="col-md-6 offset-lg-1 col-lg-4">
         <img class="profile-img" :src="imgPath(data.img)"></img>

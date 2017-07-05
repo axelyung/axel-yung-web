@@ -58,8 +58,8 @@
                     "url": "https://nectima.se/",
                     "tags": [
                         "PHP Silex",
-                        "Sass",
-                        "Bootstrap"
+                        "Bootstrap",
+                        "Gulp"
                     ],
                     "blurb": "As an in-house developer for Nectima, I’ve implemented new designs and features to our site including our new blog page."
                 },
@@ -72,7 +72,7 @@
                     "tags": [
                         "ReactJS",
                         "Foundation",
-                        "Sass"
+                        "Webpack"
                     ],
                     "blurb": "Yaytrade is a platform which allows users to sell and trade goods and services on the secondhand market. I implemented designs for their mobile platform in preparation for their initial launch."
                 },
@@ -98,7 +98,7 @@
                     "tags": [
                         "Wordpress",
                         "Bootstrap",
-                        "Sass"
+                        "Gulp"
                     ],
                     "blurb": "Xtractor, another Nectima client, is a Stockholm based firm specializing in e-learning. For their 2017 campaign, I was involved in updating their existing Wordpress site with a brand new design."
                 }
@@ -352,6 +352,7 @@
             "title": "Contact",
             "backgroundImage": "backgrounds/wezmann.jpg",
             "blurb": "Feel free to get in touch with me. I’m always looking for new projects to get involved in and it’s always fun to hear from someone who’s been in.",
+            "email": "axelyung@gmail.com",
             "labels": {
                 "email": "Your email",
                 "subject": "Subject",
@@ -361,7 +362,7 @@
         },
         "thanks": {
             "title": "Thanks",
-            "backgroundImage": "kids.jpg",
+            "backgroundImage": "backgrounds/kids.jpg",
             "subtitle": "I'll try and get back to you asap!",
             "btnText": "Back to homepage"
         },

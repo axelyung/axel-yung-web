@@ -3,7 +3,9 @@
     <div class="background" :style="{ backgroundImage: bgImg }"></div>
     <div class="container body-container">
       <navbar ref="nav"></navbar>
-      <router-view></router-view>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
     </div>
     <foot></foot>
   </div>
@@ -16,7 +18,6 @@ import VueRouter from 'vue-router'
 import site from 'site'
 
 export default {
-  name: 'app',
   created() {
     this.setBackground();
   },
@@ -51,4 +52,36 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+$time: .5s;
+
+.body-container{
+  transition: height $time;
+}
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-property: opacity, visibility, display;
+  transition-duration:  $time/2;
+}
+
+.fade-enter-active {
+  transition-delay: $time/2;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fade-enter-to,
+.fade-leave {
+  opacity: 1;
+  visibility: visible;
+}
+</style>
+
 

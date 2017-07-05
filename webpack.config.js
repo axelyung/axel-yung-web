@@ -8,14 +8,14 @@ const extractSass = new ExtractTextPlugin({
 });
 
 module.exports = {
-  entry: ['./src/main.js', './sass/main.scss'],
+  entry: ['./src/main.js'],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
-    rules: [
+    loaders: [
       {
         test: /\.json$/,
         loader: 'json-loader'
@@ -40,7 +40,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        test: /\.(ico|png|jpg|jpeg|gif|svg)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
@@ -55,8 +55,10 @@ module.exports = {
         test: /\.scss$/,
         use: extractSass.extract({
           use: [{
-            loader: "css-loader"
-          }, {
+            loader: "css-loader",
+            options: { importLoaders: 1 }
+          },
+          {
             loader: "sass-loader"
           }],
           // use style-loader in development

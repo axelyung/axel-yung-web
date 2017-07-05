@@ -12,6 +12,7 @@ nav.navbar {
         background: $white;
         z-index: -1;
         opacity: .95;
+        transition: opacity 2s;
     }
     .navbar-toggler {
         outline: none;
