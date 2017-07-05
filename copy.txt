@@ -1,0 +1,25 @@
+COPY FOR AXEL-YUNG-WEB
+
+Home
+- Blurb : I’m a web developer currently based out of Stockholm, Sweden. I love my job!
+
+Projects
+- Blurb : I’ve had the opportunity to work  with several unique and exciting projects over my career as a developer. These are a couple examples of projects that I’ve contributed to. 
+- Nectima : As an in-house developer for Nectima, I’ve implemented new designs and features to our site including our new blog page. 
+- Inkbay: A client of Nectima, Inkbay is a brand new platform for buying and booking tattoos. My role in this project was implementing new designs to their existing site as well helping to build a new lifestyle section with articles, interviews and documentaries about tattoo culture.
+- Xtractor: Xtractor, another Nectima client, is a Stockholm based firm specializing in e-learning. For their 2017 campaign, I was involved in updating their existing Wordpress site with a brand new design.
+- Yaytrade: Yaytrade is a platform which allows users to sell and trade goods and services on the secondhand market. I implemented designs for their mobile platform in preparation for their initial launch.
+
+Expertise
+- Blurb: Part of the excitement (and challenge) of working as a developer comes from the steady evolution of new web technologies. There’s always something new to learn, but these are some of the things that I’ve had experience working with so far.
+
+Resources
+- There are so many great resources for learning and inspiring web development. These are some of my favorites. 
+
+About
+- Blurb: I graduated from Vassar College with a B.A. in Mathematics and Economics in 2013. After a couple of years freelancing as an audio engineer, I completed an intensive program in web development and started working for Academic Work shortly thereafter. I am currently living in Stockholm, Sweden and working on assignment at Nectima. When not at work I’m likely sitting in the studio.
+
+Contact
+- Blurb: Feel free to get in touch with me. I’m always looking for new projects to get involved in and it’s always fun to hear from someone who’s been in.
+
+Thanks
