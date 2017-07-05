@@ -1,4 +1,4 @@
-#app.contact {
+#app.contact .body {
     .page-header {
         margin-bottom: .5rem;
     }
@@ -15,7 +15,7 @@
                         display: none;
                     }
                     ~input,
-                    ~textarea{
+                    ~textarea {
                         border-color: $error-clr;
                     }
                 }
@@ -24,6 +24,7 @@
             textarea {
                 &::-webkit-input-placeholder {
                     font-family: 'Roboto';
+                    font-weight: 300;
                     color: $grey;
                 }
                 &:focus {
@@ -36,14 +37,9 @@
                 height: 8rem;
             }
         }
-        .btn {
-            font-family: 'Roboto';
-            margin-top: .5rem;
+        .btn.btn-primary {
             text-transform: uppercase;
-            min-width: 150px;
-            border: none;
-            transition: transform $slow-transition;
-            position: relative;
+            margin-top: 1rem;
             span {
                 position: relative;
                 &:after {
@@ -55,33 +51,9 @@
                     bottom: -1px;
                     left: 50%;
                     right: 50%;
-                    transition: all $slow-transition;
+                    transition: all $fast-transition;
                 }
             }
-            .loader{
-                @include abs-center;
-                visibility: hidden;
-                &.active{
-                    visibility: visible;
-                    +span{
-                        visibility: hidden;
-                    }
-                }
-            }
-            &:hover,
-            &:active,
-            &:focus {
-                box-shadow: $box-shadow;
-                background: $brand-primary;
-                outline: none;
-                transform: scale(1.05);
-                span:after {
-                    visibility: visible;
-                    left: 0;
-                    right: 0;
-                }
-            }
-            
         }
     }
 }

@@ -16,7 +16,6 @@ html body {
         }
     }
     >#app {
-        overflow: hidden;
         >.background {
             background-repeat: no-repeat;
             background-size: cover;
@@ -36,8 +35,30 @@ html body {
                 h1 {
                     text-transform: uppercase;
                 }
-                p{
+                p {
                     font-size: 1.125rem;
+                }
+            }
+            .btn {
+                cursor: pointer;
+                font-family: 'Roboto';
+                margin-top: .5rem;
+                min-width: 150px;
+                border: none;
+                transition: transform $fast-transition;
+                position: relative;
+                &:hover,
+                &:active,
+                &:focus {
+                    box-shadow: $box-shadow;
+                    background: $brand-primary;
+                    outline: none;
+                    transform: scale(1.05);
+                    span:after {
+                        visibility: visible;
+                        left: 0;
+                        right: 0;
+                    }
                 }
             }
         }

@@ -1,14 +1,14 @@
 nav.navbar {
     padding: 0;
     &:after {
-        box-shadow: $box-shadow-bottom;
-        display: block;
         content: '';
+        display: block;
         position: absolute;
-        left: -100vw;
-        right: -100vw;
+        box-shadow: $box-shadow-bottom;
         top: 0;
-        height: 100%;
+        width: 100vw;
+        left: calc((100% - 100vw)/2);
+        bottom: 0;
         background: $white;
         z-index: -1;
         opacity: .95;
@@ -124,7 +124,7 @@ nav.navbar {
         }
     }
     @include media-breakpoint-down(sm) {
-        .navbar-brand{
+        .navbar-brand {
             line-height: 3.25rem;
         }
         .navbar-nav {

@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable type="light" toggle-breakpoint="sm" sticky>
+  <b-navbar toggleable  toggle-breakpoint="sm" sticky>
     <b-nav-toggle ref="toggler" class="hidden-md-up" target="nav_collapse"></b-nav-toggle>
     <router-link class="navbar-brand" to="/">{{ data.title }}</router-link>
     <b-collapse is-nav id="nav_collapse">
