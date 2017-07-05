@@ -18,6 +18,9 @@
             <a :href="c.url" target="_blank">
               <img class="logo" :src="imgPath(c.logo)" :alt="c.name">
             </a>
+            <div class="tags">
+              <span class="tag" :style="{ background : c.color }" v-for="tag in c.tags" :key="tag">{{ tag }}</span>
+            </div>
             <p class="blurb">{{ c.blurb }}</p>
           </div>
         </div>
