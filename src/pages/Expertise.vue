@@ -10,8 +10,8 @@
       <div v-for="(field, i) in data.fields" :key="i" class="field col-6 col-sm-4 col-lg-2">
         <svg-icon :icon="field.icon"></svg-icon>
         <div class="name">{{ field.name }}</div>
-        <a v-for="item in field.items" :key="item">
-          {{ item }}
+        <a v-for="item in field.items" :key="item" :href="item.url" target="_blank">
+          {{ item.name }}
         </a>
       </div>
     </div>
