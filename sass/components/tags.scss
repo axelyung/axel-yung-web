@@ -1,0 +1,9 @@
+.tag{
+    color: $white;
+    padding: 2px .75rem;
+    border-radius: 1rem;
+    font-weight: 300;
+    +.tag{
+        margin-left: .5rem;
+    }
+}
