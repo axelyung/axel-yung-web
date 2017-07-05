@@ -1,9 +1,23 @@
-.tag{
-    color: $white;
-    padding: 2px .75rem;
-    border-radius: 1rem;
-    font-weight: 300;
-    +.tag{
-        margin-left: .5rem;
+.tags {
+    margin-bottom: .5rem;
+    .tag {
+        color: $white;
+        padding: 2px .75rem;
+        border-radius: 1rem;
+        font-weight: 300;
+        word-wrap: normal;
+        display: inline-block;
+        +.tag {
+            margin-left: .5rem;
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        margin-left: -.5rem;
+        margin-bottom: .25rem;
+        .tag {
+            margin-left: .5rem;
+            margin-bottom: .25rem;
+            font-size: 14px;
+        }
     }
 }

@@ -19,9 +19,9 @@ footer.footer {
             font-size: 14px;
         }
         .title,
-        .email{
+        .email {
             color: $white;
-            &:hover{
+            &:hover {
                 color: $white;
             }
             @include scale-hover(5);
@@ -37,7 +37,25 @@ footer.footer {
                 +a {
                     margin-left: 1rem;
                 }
-
+            }
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        height: $mobile-footer-height;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        .inner {
+            .title,
+            .email,
+            .tele-nr {
+                display: none;
+            }
+            .media-links {
+                margin-top: 0;
+                a+a{
+                    margin-left: 1.25rem;
+                }
             }
         }
     }

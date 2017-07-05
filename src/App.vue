@@ -54,34 +54,7 @@ export default {
 </script>
 
 <style lang="scss">
-$time: .5s;
-
-.body-container{
-  transition: height $time;
-}
-
-
-.fade-enter-active,
-.fade-leave-active {
-  transition-property: opacity, visibility, display;
-  transition-duration:  $time/2;
-}
-
-.fade-enter-active {
-  transition-delay: $time/2;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.fade-enter-to,
-.fade-leave {
-  opacity: 1;
-  visibility: visible;
-}
+@import '../sass/main';
 </style>
 
 

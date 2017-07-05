@@ -64,19 +64,6 @@
                     "blurb": "As an in-house developer for Nectima, I’ve implemented new designs and features to our site including our new blog page."
                 },
                 {
-                    "name": "yaytrade",
-                    "logo": "projects/yaytrade_logo.jpg",
-                    "img": "projects/yaytrade_screen.png",
-                    "color": "#E50D65",
-                    "url": "https://www.yaytrade.com/",
-                    "tags": [
-                        "ReactJS",
-                        "Foundation",
-                        "Webpack"
-                    ],
-                    "blurb": "Yaytrade is a platform which allows users to sell and trade goods and services on the secondhand market. I implemented designs for their mobile platform in preparation for their initial launch."
-                },
-                {
                     "name": "Inkbay",
                     "logo": "projects/inkbay_logo.png",
                     "img": "projects/inkbay_screen.png",

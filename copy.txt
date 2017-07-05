@@ -23,3 +23,18 @@ Contact
 - Blurb: Feel free to get in touch with me. I’m always looking for new projects to get involved in and it’s always fun to hear from someone who’s been in.
 
 Thanks
+
+
+{
+    "name": "yaytrade",
+    "logo": "projects/yaytrade_logo.jpg",
+    "img": "projects/yaytrade_screen.png",
+    "color": "#E50D65",
+    "url": "https://www.yaytrade.com/",
+    "tags": [
+        "ReactJS",
+        "Foundation",
+        "Webpack"
+    ],
+    "blurb": "Yaytrade is a platform which allows users to sell and trade goods and services on the secondhand market. I implemented designs for their mobile platform in preparation for their initial launch."
+},

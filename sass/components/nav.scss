@@ -1,5 +1,7 @@
 nav.navbar {
     padding: 0;
+    transition: border-bottom-color $router-transition/2;
+    border-bottom: 2px solid transparent;
     &:after {
         content: '';
         display: block;
@@ -12,7 +14,7 @@ nav.navbar {
         background: $white;
         z-index: -1;
         opacity: .95;
-        transition: opacity 2s;
+        transition: opacity $router-transition/2;
     }
     .navbar-toggler {
         outline: none;
