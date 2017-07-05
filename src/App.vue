@@ -24,7 +24,7 @@ export default {
     console.log(this.$route.name)
     return {
       page: this.$route.name,
-      bgImg : ''
+      bgImg: ''
     }
   },
   watch: {
@@ -39,13 +39,14 @@ export default {
     Foot
   },
   methods: {
-    setBackground () {
-      if(site.pages[this.page].backgroundImage){
-        let img = site.pages[this.page].backgroundImage
-        this.bgImg = `url(${this.imgPath(img)})`;
+    setBackground() {
+      let img;
+      if (site.pages[this.page] && site.pages[this.page].backgroundImage) {
+        img = site.pages[this.page].backgroundImage
       } else {
-        this.bgImg = 'none';
+        img = site.default.backgroundImage;
       }
+      this.bgImg = `url(${this.imgPath(img)})`;
     }
   }
 }
