@@ -6,9 +6,9 @@ $grey : #A2A9AF;
 $white : #FFFFFF;
 
 $border-radius: 2px;
-$box-shadow : 0 0 5px 0 rgba(0,0,0,0.25);
-$box-shadow-medium: 0 20px 50px 0 rgba(0,0,0,0.16); 
-$box-shadow-heavy : 0 20px 100px 0 rgba(0,0,0,0.12);
+$box-shadow-light : 0 0 5px 0 rgba(0,0,0,0.25);
+$box-shadow-medium: 0 0 10px 0 rgba(0,0,0,0.25); 
+$box-shadow-heavy : 0 0 15px 0 rgba(0,0,0,0.25); 
 $box-shadow-bottom : 0px 12px 20px -15px rgba(0,0,0,0.25);
 
 $footer-height: 180px;
@@ -20,23 +20,23 @@ $slow-transition: .5s;
 
 @font-face{
     font-family: Roboto;
-    src: url('~/../../src/assets/fonts/Roboto-Light.ttf');
+    src: url('~assets/fonts/Roboto-Light.ttf');
     font-weight: 300;
 }
 
 @font-face{
     font-family: Roboto;
-    src: url('~/../../src/assets/fonts/Roboto-Medium.ttf');
+    src: url('~assets/fonts/Roboto-Medium.ttf');
     font-weight: medium;
 }
 
 @font-face{
     font-family: Roboto;
-    src: url('~/../../src/assets/fonts/Roboto-Bold.ttf');
+    src: url('~assets/fonts/Roboto-Bold.ttf');
     font-weight: bold;
 }
 
 @font-face{
     font-family: Roboto;
-    src: url('~/../../src/assets/fonts/Roboto-Regular.ttf');
+    src: url('~assets/fonts/Roboto-Regular.ttf');
 }

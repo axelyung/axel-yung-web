@@ -22,7 +22,6 @@ export default {
     this.setBackground();
   },
   data() {
-    console.log(this.$route.name)
     return {
       page: this.$route.name,
       bgImg: ''

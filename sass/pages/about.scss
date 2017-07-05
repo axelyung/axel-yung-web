@@ -2,6 +2,9 @@
     .profile-img{
         width: 100%;
     }
+    .blurb a{
+        text-decoration: underline;
+    }
     @include media-breakpoint-down(sm){
         .title{
             margin-top: 1rem;

@@ -6,7 +6,7 @@
       </div>
       <div class="col-md-6">
         <h1 class="title">{{ data.title }}</h1>
-        <div v-html="data.bio"></div>
+        <div class="blurb" v-html="data.bio"></div>
       </div>
     </div>
   </div>

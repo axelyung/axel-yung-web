@@ -22,6 +22,8 @@
             }
             input,
             textarea {
+                    box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);;
+                
                 &::-webkit-input-placeholder {
                     font-family: 'Roboto';
                     font-weight: 300;
@@ -29,7 +31,7 @@
                 }
                 &:focus {
                     border-color: $brand-primary;
-                    box-shadow: $box-shadow;
+                    box-shadow: $box-shadow-medium;
                 }
             }
             textarea {
@@ -40,6 +42,7 @@
         .btn.btn-primary {
             text-transform: uppercase;
             margin-top: 1rem;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);;
             span {
                 position: relative;
                 &:after {

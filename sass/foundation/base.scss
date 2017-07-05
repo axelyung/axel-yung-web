@@ -51,7 +51,7 @@ html body {
                 &:hover,
                 &:active,
                 &:focus {
-                    box-shadow: $box-shadow;
+                    box-shadow: $box-shadow-light;
                     background: $brand-primary;
                     outline: none;
                     transform: scale(1.05);

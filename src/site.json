@@ -333,7 +333,7 @@
             "title": "About",
             "img": "profile.jpg",
             "backgroundImage": "backgrounds/vassar.jpg",
-            "bio": "I graduated from Vassar College with a B.A. in Mathematics and Economics in 2013. After a couple of years freelancing as an audio engineer, I completed an intensive program in web development and started working for Academic Work shortly thereafter. I am currently living in Stockholm, Sweden and working on assignment at Nectima. When not at work I’m likely sitting in the studio"
+            "bio": "I graduated from <a href=\"https://en.wikipedia.org/wiki/Vassar_College\">Vassar College</a> with a B.A. in Mathematics and Economics in 2013. After a couple of years freelancing as an audio engineer, I completed an <a href=\"https://www.academy.se/\">intensive program</a> in web development and started working for <a href=\"https://www.academicwork.com/\">Academic Work</a> shortly thereafter. I am currently living in Stockholm, Sweden and working on assignment at <a href=\"https://nectima.se/\">Nectima</a>. When not at work I’m likely sitting in the studio making laptop music."
         },
         "contact": {
             "title": "Contact",
