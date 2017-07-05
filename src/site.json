@@ -1,4 +1,7 @@
 {
+    "default": {
+        "backgroundImage": "backgrounds/kids.jpg"
+    },
     "nav": {
         "title": "axel yung",
         "navItems": [
@@ -38,168 +41,302 @@
     },
     "pages": {
         "home": {
-            "title": "Welcome",
-            "blurb": "Enim tempor consectetur ipsum consectetur sit. Ipsum mollit culpa ad nostrud aute veniam pariatur commodo occaecat officia laboris. Non nostrud nostrud occaecat nulla irure nulla occaecat enim commodo magna amet aute. Minim aliqua exercitation nulla adipisicing cillum sit duis tempor excepteur. Officia cillum cupidatat cupidatat anim aute et aliqua exercitation elit consequat. Consequat occaecat tempor fugiat qui ad laborum. Adipisicing occaecat minim et enim quis ut reprehenderit consequat enim ex laboris.",
-            "backgroundImage": "sketch_1.jpeg"
+            "title": "Hello",
+            "blurb": "I’m a web developer currently based out of Stockholm, Sweden. I love my job :)",
+            "backgroundImage": "backgrounds/cambridge.jpg"
         },
         "projects": {
             "title": "projects",
-            "backgroundImage": "sketch_2.jpg",
-            "blurb": "Consequat irure quis velit esse occaecat cupidatat nostrud duis. Sunt elit aliqua ut commodo exercitation labore deserunt velit. Sint voluptate amet dolore pariatur non ex excepteur esse ad proident velit nisi. Dolor eu voluptate exercitation id.",
+            "backgroundImage": "backgrounds/kids.jpg",
+            "blurb": "I’ve had the opportunity to work  with several unique and exciting projects over my career as a developer. These are a couple examples of projects that I’ve contributed to.",
             "case": [
                 {
                     "name": "nectima",
-                    "logo": "nectima_logo.png",
-                    "img": "nectima_screen.png",
+                    "logo": "projects/nectima_logo.png",
+                    "img": "projects/nectima_screen.png",
                     "color": "#F65A2C",
                     "url": "https://nectima.se/",
-                    "blurb": "Voluptate eiusmod eiusmod veniam ullamco et sint et laborum sint esse magna deserunt consequat. Aliqua mollit proident laborum ullamco Lorem aute excepteur sunt est. Commodo irure Lorem quis exercitation do exercitation est exercitation do veniam exercitation. Sunt proident officia dolore fugiat aliqua reprehenderit reprehenderit aliquip ipsum id pariatur. Minim minim irure nisi aute pariatur ex aliqua consequat sint."
+                    "tags": [
+                        "PHP Silex",
+                        "Sass",
+                        "Bootstrap"
+                    ],
+                    "blurb": "As an in-house developer for Nectima, I’ve implemented new designs and features to our site including our new blog page."
                 },
                 {
                     "name": "yaytrade",
-                    "logo": "yaytrade_logo.jpg",
-                    "img": "yaytrade_screen.png",
+                    "logo": "projects/yaytrade_logo.jpg",
+                    "img": "projects/yaytrade_screen.png",
                     "color": "#E50D65",
                     "url": "https://www.yaytrade.com/",
-                    "blurb": "Eiusmod ex est occaecat ullamco laborum Lorem occaecat eiusmod voluptate minim sit sit excepteur id. Exercitation aliquip quis amet incididunt consectetur Lorem enim mollit. Quis nisi esse ea commodo labore irure. Velit incididunt ex sunt excepteur velit. Aute adipisicing et ea reprehenderit duis minim."
+                    "tags": [
+                        "ReactJS",
+                        "Foundation",
+                        "Sass"
+                    ],
+                    "blurb": "Yaytrade is a platform which allows users to sell and trade goods and services on the secondhand market. I implemented designs for their mobile platform in preparation for their initial launch."
                 },
                 {
                     "name": "Inkbay",
-                    "logo": "inkbay_logo.png",
-                    "img": "inkbay_screen.png",
-                    "color": "#000",
+                    "logo": "projects/inkbay_logo.png",
+                    "img": "projects/inkbay_screen.png",
+                    "color": "#171716",
                     "url": "https://inkbay.tattoo/",
-                    "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
-                },
-                {
-                    "name": "Körkortsjakten",
-                    "logo": "kkj_logo.png",
-                    "img": "kkj_screen.png",
-                    "color": "#4f7fc1",
-                    "url": "https://www.korkortsjakten.se/",
-                    "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
+                    "tags": [
+                        "PHP Laravel",
+                        "Bootstrap",
+                        "Sass"
+                    ],
+                    "blurb": "A client of Nectima, Inkbay is a brand new platform for buying and booking tattoos. My role in this project was implementing new designs to their existing site as well helping to build a new lifestyle section with articles, interviews and documentaries about tattoo culture."
                 },
                 {
                     "name": "Xtractor",
-                    "logo": "xtractor_logo.png",
-                    "img": "xtractor_screen.png",
+                    "logo": "projects/xtractor_logo.png",
+                    "img": "projects/xtractor_screen.png",
                     "color": "#b8d1c4",
                     "url": "https://xtractor.se/",
-                    "blurb": "Sint dolor dolor eiusmod esse ipsum mollit. Velit voluptate laboris laboris occaecat incididunt officia elit adipisicing dolor ut dolor pariatur qui. Eu anim voluptate Lorem exercitation sit proident anim aute. Incididunt incididunt nostrud quis qui elit."
+                    "tags": [
+                        "Wordpress",
+                        "Bootstrap",
+                        "Sass"
+                    ],
+                    "blurb": "Xtractor, another Nectima client, is a Stockholm based firm specializing in e-learning. For their 2017 campaign, I was involved in updating their existing Wordpress site with a brand new design."
                 }
             ]
         },
         "expertise": {
             "title": "expertise",
-            "backgroundImage": "sketch_3.jpg",
-            "blurb": "Cillum nisi incididunt fugiat tempor quis do ex anim nisi irure ex consectetur. Minim proident sit id ea nisi enim. Eiusmod eu est sit adipisicing et consequat dolor qui id. Deserunt fugiat elit ut ad consequat ullamco adipisicing eiusmod et. Qui veniam eiusmod Lorem laborum elit magna dolor fugiat amet. Laborum elit in fugiat officia.",
+            "backgroundImage": "backgrounds/html.jpg",
+            "blurb": "Part of the excitement (and challenge) of working as a developer comes from the steady evolution of new web technologies. There’s always something new to learn, but these are some of the things that I’ve had experience working with so far.",
             "fields": [
                 {
                     "name": "DB/ORM",
                     "icon": "database",
                     "items": [
-                        "MySQL",
-                        "PostGreSQL",
-                        "Entity Framework",
-                        "Eloquent"
+                        {
+                            "name": "MySQL",
+                            "url": "https://www.mysql.com/"
+                        },
+                        {
+                            "name": "SQLite",
+                            "url": "https://www.sqlite.org/"
+                        },
+                        {
+                            "name": "PostGreSQL",
+                            "url": "https://www.postgresql.org/"
+                        },
+                        {
+                            "name": "Entity Framework",
+                            "url": "https://msdn.microsoft.com/en-us/library/aa937723(v=vs.113).aspx"
+                        },
+                        {
+                            "name": "Eloquent",
+                            "url": "https://laravel.com/docs/5.4/eloquent"
+                        }
                     ]
                 },
                 {
                     "name": "API Frameworks",
                     "icon": "server",
                     "items": [
-                        "ASP.NET",
-                        "PHP Laravel",
-                        "PHP Silex",
-                        "Node.JS"
+                        {
+                            "name": "ASP.NET",
+                            "url": "https://www.asp.net/"
+                        },
+                        {
+                            "name": "PHP Laravel",
+                            "url": "https://laravel.com/"
+                        },
+                        {
+                            "name": "PHP Silex",
+                            "url": "https://silex.sensiolabs.org/"
+                        },
+                        {
+                            "name": "Node.JS",
+                            "url": "https://nodejs.org/en/"
+                        }
                     ]
                 },
                 {
                     "name": "CMS",
                     "icon": "cms",
                     "items": [
-                        "Wordpress",
-                        "EpiServer",
-                        "Ghost"
+                        {
+                            "name": "Wordpress",
+                            "url": "https://wordpress.org/"
+                        },
+                        {
+                            "name": "EpiServer",
+                            "url": "http://www.episerver.com/"
+                        },
+                        {
+                            "name": "Ghost",
+                            "url": "https://ghost.org/"
+                        }
                     ]
                 },
                 {
                     "name": "JS Frameworks",
                     "icon": "javascript",
                     "items": [
-                        "Angular 2/4",
-                        "React",
-                        "Vue",
-                        "jQuery"
+                        {
+                            "name": "Angular 2",
+                            "url": "https://angular.io/"
+                        },
+                        {
+                            "name": "React",
+                            "url": "https://facebook.github.io/react/"
+                        },
+                        {
+                            "name": "Vue",
+                            "url": "https://vuejs.org/"
+                        },
+                        {
+                            "name": "jQuery",
+                            "url": "https://jquery.com/"
+                        }
                     ]
                 },
                 {
                     "name": "Design",
                     "icon": "design",
                     "items": [
-                        "CSS3",
-                        "Bootstrap",
-                        "Semantic UI",
-                        "Bourbon",
-                        "SASS"
+                        {
+                            "name": "CSS3",
+                            "url": "https://www.w3schools.com/css/css3_intro.asp"
+                        },
+                        {
+                            "name": "Bootstrap",
+                            "url": "https://v4-alpha.getbootstrap.com/"
+                        },
+                        {
+                            "name": "Semantic UI",
+                            "url": "https://semantic-ui.com/"
+                        },
+                        {
+                            "name": "Foundation",
+                            "url": "http://foundation.zurb.com/"
+                        },
+                        {
+                            "name": "Bourbon",
+                            "url": "http://bourbon.io/"
+                        },
+                        {
+                            "name": "SASS",
+                            "url": "http://sass-lang.com/"
+                        }
                     ]
                 },
                 {
                     "name": "Dev Tools",
                     "icon": "tools",
                     "items": [
-                        "Gulp",
-                        "Bower",
-                        "Webpack",
-                        "Nuget",
-                        "NPM",
-                        "Yarn"
+                        {
+                            "name": "Gulp",
+                            "url": "http://gulpjs.com/"
+                        },
+                        {
+                            "name": "Bower",
+                            "url": "https://bower.io/"
+                        },
+                        {
+                            "name": "Webpack",
+                            "url": "https://webpack.js.org/"
+                        },
+                        {
+                            "name": "Nuget",
+                            "url": "https://www.nuget.org/"
+                        },
+                        {
+                            "name": "NPM",
+                            "url": "https://www.npmjs.com/"
+                        },
+                        {
+                            "name": "Yarn",
+                            "url": "https://yarnpkg.com/"
+                        }
                     ]
                 }
             ]
         },
         "resources": {
             "title": "Resources",
-            "backgroundImage": "sketch_1.jpeg",
-            "blurb": "Consectetur culpa minim ipsum consequat aute eu magna dolor reprehenderit. Id ad cillum exercitation quis velit. Nisi proident voluptate excepteur non laboris. Magna duis anim est velit esse duis elit dolore anim. Nulla voluptate quis proident esse nulla est excepteur amet irure esse. Incididunt minim irure esse aute quis cillum consequat culpa eu.",
+            "backgroundImage": "backgrounds/sketch_2.jpg",
+            "blurb": "There are so many great resources for learning and inspiring web development. These are some of my favorites.",
             "subjects": [
                 {
                     "name": "Books",
+                    "icon": "book",
                     "links": [
                         {
-                            "text": "text",
-                            "url": "nectima.se"
+                            "text": "Build APIs You Won't Hate",
+                            "url": "https://leanpub.com/build-apis-you-wont-hate"
                         },
                         {
-                            "text": "text2",
-                            "url": "inkbay.tattoo"
-                        }
-                    ]
-                },
-                {
-                    "name": "Libraries",
-                    "links": [
+                            "text": "Universal Principles of Design",
+                            "url": "https://www.amazon.com/exec/obidos/ASIN/1592535879/kadavyinc-20"
+                        },
                         {
-                            "text": "text",
-                            "url": "nectima.se"
+                            "text": "Atomic Design: The Book",
+                            "url": "http://bradfrost.com/blog/post/atomic-design-book/"
                         }
                     ]
                 },
                 {
                     "name": "Tutorials",
+                    "icon": "tutorial",
                     "links": [
                         {
-                            "text": "text",
-                            "url": "nectima.se"
+                            "text": "Angular 2",
+                            "url": "https://egghead.io/courses/get-started-with-angular"
+                        },
+                        {
+                            "text": "Webpack",
+                            "url": "https://egghead.io/courses/using-webpack-for-production-javascript-applications"
+                        },
+                        {
+                            "text": "ES2015",
+                            "url": "https://egghead.io/courses/learn-es6-ecmascript-2015"
+                        },
+                        {
+                            "text": "Vue 2",
+                            "url": "https://laracasts.com/series/learn-vue-2-step-by-step"
                         }
                     ]
                 },
                 {
                     "name": "Inspiration",
+                    "icon": "inspiration",
                     "links": [
                         {
-                            "text": "text",
-                            "url": "nectima.se"
+                            "text": "Awwwards",
+                            "url": "https://www.awwwards.com/"
+                        },
+                        {
+                            "text": "Code Drops",
+                            "url": "https://tympanus.net/codrops/"
+                        },
+                        {
+                            "text": "CSS Nectar",
+                            "url": "https://cssnectar.com/"
+                        }
+                    ]
+                },
+                {
+                    "name": "Cool Libraries",
+                    "icon": "vr",
+                    "links": [
+                        {
+                            "text": "Masonry",
+                            "url": "https://masonry.desandro.com/"
+                        },
+                        {
+                            "text": "ThreeJS",
+                            "url": "https://threejs.org/"
+                        },
+                        {
+                            "text": "PixiJS",
+                            "url": "http://www.pixijs.com/"
                         }
                     ]
                 }
@@ -208,14 +345,13 @@
         "about": {
             "title": "About",
             "img": "profile.jpg",
-            "backgroundImage": "sketch_2.jpg",
-            "bio": "Nostrud consectetur <strong>ea</strong> sint exercitation laboris enim do minim culpa elit incididunt. Qui deserunt laboris enim et ad est. Magna anim aliquip ea velit commodo cupidatat mollit nulla laboris non Lorem nisi ut occaecat. Dolore amet sit elit mollit deserunt nulla sunt. Ea amet minim qui tempor sint sunt enim ad elit ullamco qui."
+            "backgroundImage": "backgrounds/vassar.jpg",
+            "bio": "I graduated from Vassar College with a B.A. in Mathematics and Economics in 2013. After a couple of years freelancing as an audio engineer, I completed an intensive program in web development and started working for Academic Work shortly thereafter. I am currently living in Stockholm, Sweden and working on assignment at Nectima. When not at work I’m likely sitting in the studio"
         },
         "contact": {
             "title": "Contact",
-            "backgroundImage": "sketch_3.jpg",
-            "blurb": "Pariatur ipsum culpa eu incididunt laboris non minim qui. Anim qui eu eiusmod consectetur laborum reprehenderit nisi aute aliqua anim amet officia eiusmod. Reprehenderit aute ex enim do occaecat excepteur commodo excepteur. Excepteur ex aute proident in commodo dolor exercitation dolor. Mollit cupidatat commodo exercitation nostrud.",
-            "email": "axelyung@gmail.com",
+            "backgroundImage": "backgrounds/wezmann.jpg",
+            "blurb": "Feel free to get in touch with me. I’m always looking for new projects to get involved in and it’s always fun to hear from someone who’s been in.",
             "labels": {
                 "email": "Your email",
                 "subject": "Subject",
@@ -225,13 +361,13 @@
         },
         "thanks": {
             "title": "Thanks",
-            "backgroundImage": "sketch_1.jpeg",
+            "backgroundImage": "kids.jpg",
             "subtitle": "I'll try and get back to you asap!",
             "btnText": "Back to homepage"
         },
         "error": {
-            "title": "404 :(",
-            "backgroundImage": "sketch_3.jpg",
+            "title": "404",
+            "backgroundImage": "backgrounds/wezmann.jpg",
             "subtitle": "That page doesn't exist (anymore). Please use the nav links in the menu above.",
             "btnText": "Back to homepage"
         }
