@@ -1,21 +1,38 @@
-var path = require('path')
-var webpack = require('webpack')
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 const extractSass = new ExtractTextPlugin({
-  filename: "[name].css",
+  filename: "[name].[hash].css",
   disable: process.env.NODE_ENV === "development"
 });
 
 module.exports = {
-  entry: ['./src/main.js'],
+  entry: [
+    './src/main.js',
+    './sass/main.scss'
+  ],
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'build.[hash].js'
   },
+  plugins: [
+    extractSass,
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),
+    new FaviconsWebpackPlugin('./src/favicon.png')
+  ],
   module: {
     loaders: [
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
+      },
       {
         test: /\.json$/,
         loader: 'json-loader'
@@ -23,16 +40,6 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader',
-        options: {
-          loaders: {
-            // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
-            // the "scss" and "sass" values for the lang attribute to the right configs here.
-            // other preprocessors should work out of the box, no loader config like this necessary.
-            'scss': 'vue-style-loader!css-loader!sass-loader',
-            'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
-          }
-          // other vue-loader options go here
-        }
       },
       {
         test: /\.js$/,
@@ -55,21 +62,15 @@ module.exports = {
         test: /\.scss$/,
         use: extractSass.extract({
           use: [{
-            loader: "css-loader",
-            options: { importLoaders: 1 }
-          },
-          {
+            loader: "css-loader"
+          }, {
             loader: "sass-loader"
           }],
-          // use style-loader in development
           fallback: "style-loader"
         })
       }
     ]
   },
-  plugins: [
-    extractSass
-  ],
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     modules: [path.resolve(__dirname, "src"), "node_modules"],
@@ -79,18 +80,15 @@ module.exports = {
     }
   },
   devServer: {
-    historyApiFallback: true,
-    noInfo: true
+    contentBase: './dist'
   },
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: 'inline-source-map',
 }
 
 if (process.env.NODE_ENV === 'production') {
-  //module.exports.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
