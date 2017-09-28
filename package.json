@@ -5,13 +5,15 @@
   "author": "axelyung <axelyung@gmail.com>",
   "private": true,
   "scripts": {
+    "reset": "rm -rf node_modules && npm install",
     "generate-icons": "vsvg -s ./src/assets/svg -t ./src/components/icons",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot && rm npm-debug.log.*",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --progress --colors && rm npm-debug.log.*",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap": "4.0.0-alpha.6",
     "bootstrap-vue": "^0.17.1",
+    "style-loader": "^0.18.2",
     "vee-validate": "^2.0.0-rc.6",
     "vue": "^2.3.3",
     "vue-router": "^2.7.0"
@@ -29,6 +31,7 @@
     "postcss-loader": "^2.0.6",
     "sass-loader": "^5.0.1",
     "vue-loader": "^12.1.0",
+    "vue-style-loader": "^3.0.3",
     "vue-svgicon": "^1.1.9",
     "vue-template-compiler": "^2.3.3",
     "webpack": "^3.0.0",
