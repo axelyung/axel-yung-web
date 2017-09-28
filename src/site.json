@@ -51,6 +51,32 @@
             "blurb": "I’ve had the opportunity to work  with several unique and exciting projects over my career as a developer. These are a couple examples of projects that I’ve contributed to.",
             "case": [
                 {
+                    "name": "yaytrade",
+                    "logo": "projects/kkj_logo.png",
+                    "img": "projects/kkj_screen.png",
+                    "color": "#4f7fc1",
+                    "url": "https://www.korkortsjakten.se/",
+                    "tags": [
+                        "Vue",
+                        "PHP Laravel",
+                        "Webpack"
+                    ],
+                    "blurb": "Körkortsjakten lets driving students find, compare and book courses in the Swedish market. On this project I worked fullstack implementing new features and designs to this e-commerce platform."
+                },
+                {
+                    "name": "yaytrade",
+                    "logo": "projects/yaytrade_logo.jpg",
+                    "img": "projects/yaytrade_screen.png",
+                    "color": "#ff0064",
+                    "url": "https://www.yaytrade.com/",
+                    "tags": [
+                        "React",
+                        "Foundation",
+                        "Parse"
+                    ],
+                    "blurb": "Yaytrade is a platform which allows users to sell and trade goods and services on the secondhand market. I implemented designs for their mobile platform in preparation for their initial launch."
+                },
+                {
                     "name": "nectima",
                     "logo": "projects/nectima_logo.png",
                     "img": "projects/nectima_screen.png",
