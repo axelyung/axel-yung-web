@@ -12,7 +12,7 @@
           <div class="form-group">
             <label class="error-msg" v-if="errors.has('_replyto') && submitFailed">{{ errors.first('_replyto') }}</label>
             <label for="address">{{ data.labels.email }}</label>
-            <input v-validate="'required|email'" name="_replyto" type="text" class="form-control" id="address" aria-describedby="email" placeholder="Enter email">
+            <input v-validate="'required|email'" name="_replyto" type="email" class="form-control" id="address" aria-describedby="email" placeholder="Enter email">
           </div>
           <div class="form-group">
             <label for="subject">{{ data.labels.subject }}</label>
