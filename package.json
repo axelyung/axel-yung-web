@@ -7,15 +7,14 @@
   "scripts": {
     "reset": "rm -rf node_modules && npm install",
     "generate-icons": "vsvg -s ./src/assets/svg -t ./src/components/icons",
-    "dev1": "webpack --config webpack.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --progress --colors",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --colors"
+    "pack": "cross-env NODE_ENV=production webpack --progress --hide-modules --colors",
+    "copy": "rm -r  ~/documents/code/current/axelyung.github.io/* && cp -a ./dist/. ~/documents/code/current/axelyung.github.io/",
+    "build": "npm run generate-icons && npm run pack && npm run copy"
   },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "bootstrap-vue": "^0.17.1",
-    "html-loader": "^0.5.1",
-    "style-loader": "^0.18.2",
     "vee-validate": "^2.0.0-rc.6",
     "vue": "^2.3.3",
     "vue-router": "^2.7.0"
@@ -30,11 +29,13 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "favicons-webpack-plugin": "0.0.7",
     "file-loader": "^0.9.0",
+    "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "json-loader": "^0.5.4",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.6",
     "sass-loader": "^5.0.1",
+    "style-loader": "^0.18.2",
     "vue-loader": "^12.1.0",
     "vue-style-loader": "^3.0.3",
     "vue-svgicon": "^1.1.9",
